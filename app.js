@@ -3,11 +3,24 @@
  * Module dependencies.
  */
 
-var express = require('express')
-  , routes = {
+var express = require('express'),
+    mongoose = require('mongoose'),
+    routes = {
         index: require('./routes/index.js').index
        ,front: require('./routes/front.js')
     };
+
+mongoose.connect('mongodb://localhost/blogdev');
+var Schema = mongoose.Schema;
+var ObjectId = Schema.ObjectId;
+
+var BlogPost = new Schema({
+    title : String,
+    art : String,
+    created : Date
+});
+
+
 
 var app = module.exports = express.createServer();
 
