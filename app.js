@@ -15,13 +15,33 @@ var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 
 var BlogPost = new Schema({
-    title : String,
-    art : String,
-    created : Date
+    title : { type: String, required: true, trim: true },
+    art : { type: String, required: true, trim: true },
+    created : { type: Date, required: true }
 });
+/**
+ var Person = mongoose.model('Person', Person);
 
+ To save/insert data to a schema, we use the .save() function, which has a callback (as all other db interaction calls).
 
+ var person_data = {
+ first_name: req.params.first
+ , last_name: req.params.last
+ , username: req.params.username
+ };
 
+ var person = new Person(person_data);
+
+ person.save( function(error, data){
+ if(error){
+ res.json(error);
+ }
+ else{
+ res.json(data);
+ }
+ });
+
+*/
 var app = module.exports = express.createServer();
 
 // Configuration
