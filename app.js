@@ -19,6 +19,26 @@ var BlogPost = new Schema({
     art : { type: String, required: true, trim: true },
     created : { type: Date, required: true }
 });
+var Post = mongoose.model('Post', BlogPost);
+// test code for mongo connection below
+var currentDate = new Date();
+//garbage test data
+var post_data = {
+    title: 'john rules',
+    art: 'yep that is right',
+    created: currentDate
+}
+
+var post = new Post(post_data);
+//test save
+post.save ( function(error, data) {
+    if (error) {
+        console.log(error);
+    }
+    else {
+        console.log(data);
+    }
+});
 /**
  var Person = mongoose.model('Person', Person);
 
