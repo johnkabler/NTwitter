@@ -13,7 +13,6 @@ var express = require('express'),
 mongoose.connect('mongodb://localhost/blogdev');
 
 
-
 var app = module.exports = express.createServer();
 
 // Configuration

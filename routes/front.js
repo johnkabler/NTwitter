@@ -10,10 +10,12 @@ var Post = require('../models/post.js');
 exports.frontget = function(req, res) {
     //capture list of all posts from mongoDB
     var list = Post.find(function(err, posts){
+        if(err) {
+            console.log(err);
+        } else {
         console.log(posts);
+        res.render('front', {posts:posts, error: ''})}
     });
-    // Render the front template
-    res.render('front', {title: '', art:'', error: ''})
 };
 
 exports.frontpost = function(req,res) {
@@ -31,23 +33,36 @@ exports.frontpost = function(req,res) {
             title: title,
             art: art,
             created: currentDate
-        }
+        };
 
         var post = new Post(post_data);
 //test save
         post.save ( function(error, data) {
-            if (error) {
+            if (error)
+            {
                 console.log(error);
             }
-            else {
+            else
+            {
                 console.log(data);
+                var list = Post.find(function(err, posts)
+                {
+                    if(err)
+                    {
+                        console.log(err);
+                    }
+                    else
+                    {
+                        console.log(posts);
+                        res.render('front', {title: '', art: '', error: '', posts:posts});
+                    }
+                });
             }
         });
-       //res.send(title + " " + art);
-        res.render('front', {title: title, art: art, error: ''});
+
     }
     else{
         var error = 'You need both title and art'
         res.render('front.jade',{error: error} )
     }
-};
+    };
