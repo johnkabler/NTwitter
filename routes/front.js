@@ -7,6 +7,7 @@
  */
     //importing the Post model from the mongoose blogpost model defined in models/post.js
 var Post = require('../models/post.js');
+
 exports.frontget = function(req, res) {
     //capture list of all posts from mongoDB
     var list = Post.find(function(err, posts){
@@ -63,6 +64,18 @@ exports.frontpost = function(req,res) {
     }
     else{
         var error = 'You need both title and art'
-        res.render('front.jade',{error: error} )
+        var list = Post.find(function(err, posts)
+        {
+            if(err)
+            {
+                console.log(err);
+            }
+            else
+            {
+                console.log(posts);
+                res.render('front', {title: req.body.title, art: req.body.art, error: error, posts:posts});
+            }
+        });
+
     }
     };

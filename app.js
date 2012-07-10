@@ -10,7 +10,7 @@ var express = require('express'),
        ,front: require('./routes/front.js')
     };
 
-mongoose.connect('mongodb://localhost/blogdev');
+mongoose.connect('mongodb://jpez:slater@ds035617.mongolab.com:35617/jpblog');
 
 
 var app = module.exports = express.createServer();
