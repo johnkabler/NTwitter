@@ -1,0 +1,60 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'angular',
+1 verbose cli   '-g' ]
+2 info using npm@1.1.32
+3 info using node@v0.8.0
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose config file C:\Users\john.kabler\.npmrc
+6 verbose config file C:\Program Files\nodejs\etc\npmrc
+7 verbose config file C:\Program Files\nodejs\node_modules\npm\npmrc
+8 verbose read json C:\Users\john.kabler\AppData\Roaming\npm\package.json
+9 verbose read json C:\Users\john.kabler\AppData\Roaming\npm\package.json
+10 verbose cache add [ 'angular', null ]
+11 silly cache add name=undefined spec="angular" args=["angular",null]
+12 verbose parsed url { pathname: 'angular', path: 'angular', href: 'angular' }
+13 verbose addNamed [ 'angular', '' ]
+14 verbose addNamed [ null, '' ]
+15 silly addNameRange { name: 'angular', range: '', hasData: false }
+16 verbose url raw angular
+17 verbose url resolving [ 'https://registry.npmjs.org/', './angular' ]
+18 verbose url resolved https://registry.npmjs.org/angular
+19 http GET https://registry.npmjs.org/angular
+20 http 200 https://registry.npmjs.org/angular
+21 silly registry.get cb [ 200,
+21 silly registry.get   { vary: 'Accept',
+21 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+21 silly registry.get     etag: '"A16D8NG1C82H2SAKMCS4MTHZT"',
+21 silly registry.get     date: 'Tue, 10 Jul 2012 02:54:12 GMT',
+21 silly registry.get     'content-type': 'application/json',
+21 silly registry.get     'content-length': '5012' } ]
+22 silly addNameRange number 2 { name: 'angular', range: '', hasData: true }
+23 silly addNameRange versions [ 'angular', [] ]
+24 error Error: No compatible version found: angular
+24 error No valid targets found.
+24 error Perhaps not compatible with your version of node?
+24 error     at installTargetsError (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:506:10)
+24 error     at next_ (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:452:17)
+24 error     at next (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:427:44)
+24 error     at C:\Program Files\nodejs\node_modules\npm\lib\cache.js:419:5
+24 error     at saved (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\get.js:136:7)
+24 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:230:7
+24 error     at Object.oncomplete (fs.js:297:15)
+24 error  [Error: No compatible version found: angular
+24 error No valid targets found.
+24 error Perhaps not compatible with your version of node?]
+25 error You may report this log at:
+25 error     <http://github.com/isaacs/npm/issues>
+25 error or email it to:
+25 error     <npm-@googlegroups.com>
+26 error System Windows_NT 6.1.7601
+27 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "angular" "-g"
+28 error cwd C:\Users\john.kabler\Desktop\NTwitter
+29 error node -v v0.8.0
+30 error npm -v 1.1.32
+31 error message No compatible version found: angular
+31 error message No valid targets found.
+31 error message Perhaps not compatible with your version of node?
+32 verbose exit [ 1, true ]

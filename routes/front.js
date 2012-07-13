@@ -15,7 +15,8 @@ exports.frontget = function(req, res) {
             console.log(err);
         } else {
         console.log(posts);
-        res.render('front', {posts:posts, error: ''})}
+
+        res.render('front', {posts:posts, error: '', title: ''})}
     });
 };
 
@@ -28,6 +29,7 @@ exports.frontpost = function(req,res) {
      *  Else, spit back an error message that renders in the front page
      *  */
     if(title && art)
+    // If both title and art values are submitted, save to the database
     {
         var currentDate = new Date();
         var post_data = {
@@ -46,23 +48,14 @@ exports.frontpost = function(req,res) {
             else
             {
                 console.log(data);
-                var list = Post.find(function(err, posts)
-                {
-                    if(err)
-                    {
-                        console.log(err);
-                    }
-                    else
-                    {
-                        console.log(posts);
-                        res.render('front', {title: '', art: '', error: '', posts:posts});
-                    }
-                });
+                res.redirect('/');
             }
         });
 
     }
     else{
+        // If either title or art is missing, don't save to database and
+        // re render the submit page
         var error = 'You need both title and art'
         var list = Post.find(function(err, posts)
         {
