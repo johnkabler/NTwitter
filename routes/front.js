@@ -10,7 +10,10 @@ var Post = require('../models/post.js');
 
 exports.frontget = function(req, res) {
     //capture list of all posts from mongoDB
-    var list = Post.find(function(err, posts){
+    //sort the posts by date in descending order
+    var list = Post.find()
+        .sort('created', -1)
+        .exec(function(err, posts){
         if(err) {
             console.log(err);
         } else {
