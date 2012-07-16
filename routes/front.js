@@ -13,6 +13,7 @@ exports.frontget = function(req, res) {
     //sort the posts by date in descending order
     var list = Post.find()
         .sort('created', -1)
+        .limit(10)
         .exec(function(err, posts){
         if(err) {
             console.log(err);

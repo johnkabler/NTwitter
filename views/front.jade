@@ -11,8 +11,9 @@ form(method='post')
       input(type='submit')
 
 each bpost in posts
-  li= bpost.title
-  li= bpost.art
+  .art
+      .art-title= bpost.title
+      pre.art-body=bpost.art
 
 
 
