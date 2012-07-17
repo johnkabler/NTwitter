@@ -8,6 +8,7 @@
     //importing the Post model from the mongoose blogpost model defined in models/post.js
 var Post = require('../models/post.js');
 
+
 exports.frontget = function(req, res) {
     //capture list of all posts from mongoDB
     //sort the posts by date in descending order
@@ -23,7 +24,8 @@ exports.frontget = function(req, res) {
         res.render('front', {posts:posts, error: '', title: ''})}
     });
 };
-
+//Need to add in authentication checks to prevent posts without being logged
+// in.  Will do so once appid and appsecrets are put in the conf file
 exports.frontpost = function(req,res) {
     var title = req.body.title;
     var art = req.body.art;

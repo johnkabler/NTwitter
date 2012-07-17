@@ -2,59 +2,553 @@
 1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'install',
-1 verbose cli   'angular',
-1 verbose cli   '-g' ]
+1 verbose cli   'mongoose-auth' ]
 2 info using npm@1.1.32
 3 info using node@v0.8.0
 4 verbose node symlink C:\Program Files\nodejs\\node.exe
 5 verbose config file C:\Users\john.kabler\.npmrc
 6 verbose config file C:\Program Files\nodejs\etc\npmrc
 7 verbose config file C:\Program Files\nodejs\node_modules\npm\npmrc
-8 verbose read json C:\Users\john.kabler\AppData\Roaming\npm\package.json
-9 verbose read json C:\Users\john.kabler\AppData\Roaming\npm\package.json
-10 verbose cache add [ 'angular', null ]
-11 silly cache add name=undefined spec="angular" args=["angular",null]
-12 verbose parsed url { pathname: 'angular', path: 'angular', href: 'angular' }
-13 verbose addNamed [ 'angular', '' ]
-14 verbose addNamed [ null, '' ]
-15 silly addNameRange { name: 'angular', range: '', hasData: false }
-16 verbose url raw angular
-17 verbose url resolving [ 'https://registry.npmjs.org/', './angular' ]
-18 verbose url resolved https://registry.npmjs.org/angular
-19 http GET https://registry.npmjs.org/angular
-20 http 200 https://registry.npmjs.org/angular
-21 silly registry.get cb [ 200,
-21 silly registry.get   { vary: 'Accept',
-21 silly registry.get     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
-21 silly registry.get     etag: '"A16D8NG1C82H2SAKMCS4MTHZT"',
-21 silly registry.get     date: 'Tue, 10 Jul 2012 02:54:12 GMT',
-21 silly registry.get     'content-type': 'application/json',
-21 silly registry.get     'content-length': '5012' } ]
-22 silly addNameRange number 2 { name: 'angular', range: '', hasData: true }
-23 silly addNameRange versions [ 'angular', [] ]
-24 error Error: No compatible version found: angular
-24 error No valid targets found.
-24 error Perhaps not compatible with your version of node?
-24 error     at installTargetsError (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:506:10)
-24 error     at next_ (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:452:17)
-24 error     at next (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:427:44)
-24 error     at C:\Program Files\nodejs\node_modules\npm\lib\cache.js:419:5
-24 error     at saved (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\get.js:136:7)
-24 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:230:7
-24 error     at Object.oncomplete (fs.js:297:15)
-24 error  [Error: No compatible version found: angular
-24 error No valid targets found.
-24 error Perhaps not compatible with your version of node?]
-25 error You may report this log at:
-25 error     <http://github.com/isaacs/npm/issues>
-25 error or email it to:
-25 error     <npm-@googlegroups.com>
-26 error System Windows_NT 6.1.7601
-27 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "angular" "-g"
-28 error cwd C:\Users\john.kabler\Desktop\NTwitter
-29 error node -v v0.8.0
-30 error npm -v 1.1.32
-31 error message No compatible version found: angular
-31 error message No valid targets found.
-31 error message Perhaps not compatible with your version of node?
-32 verbose exit [ 1, true ]
+8 verbose read json C:\Users\john.kabler\Desktop\NTwitter\package.json
+9 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\everyauth\package.json
+10 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\express\package.json
+11 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\jade\package.json
+12 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose\package.json
+13 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\package.json
+14 verbose readDependencies using package.json deps
+15 verbose cache add [ 'mongoose-auth', null ]
+16 silly cache add name=undefined spec="mongoose-auth" args=["mongoose-auth",null]
+17 verbose parsed url { pathname: 'mongoose-auth',
+17 verbose parsed url   path: 'mongoose-auth',
+17 verbose parsed url   href: 'mongoose-auth' }
+18 verbose addNamed [ 'mongoose-auth', '' ]
+19 verbose addNamed [ null, '' ]
+20 silly addNameRange { name: 'mongoose-auth', range: '', hasData: false }
+21 verbose url raw mongoose-auth
+22 verbose url resolving [ 'https://registry.npmjs.org/', './mongoose-auth' ]
+23 verbose url resolved https://registry.npmjs.org/mongoose-auth
+24 verbose etag "34F6QRX6LSU1UH4SRSPNYKW75"
+25 http GET https://registry.npmjs.org/mongoose-auth
+26 http 304 https://registry.npmjs.org/mongoose-auth
+27 silly registry.get cb [ 304,
+27 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+27 silly registry.get     etag: '"34F6QRX6LSU1UH4SRSPNYKW75"',
+27 silly registry.get     date: 'Tue, 17 Jul 2012 03:36:48 GMT',
+27 silly registry.get     'content-length': '0' } ]
+28 verbose etag mongoose-auth from cache
+29 silly addNameRange number 2 { name: 'mongoose-auth', range: '', hasData: true }
+30 silly addNameRange versions [ 'mongoose-auth',
+30 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.10', '0.0.11', '0.0.12' ] ]
+31 verbose read json C:\Users\john.kabler\AppData\Roaming\npm-cache\mongoose-auth\0.0.12\package\package.json
+32 silly resolved [ { name: 'mongoose-auth',
+32 silly resolved     description: 'User authentication plugin for mongoose node.js orm',
+32 silly resolved     version: '0.0.12',
+32 silly resolved     homepage: 'https://github.com/bnoguchi/mongoose-auth/',
+32 silly resolved     repository:
+32 silly resolved      { type: 'git',
+32 silly resolved        url: 'git://github.com/bnoguchi/mongoose-auth.git' },
+32 silly resolved     author:
+32 silly resolved      { name: 'Brian Noguchi',
+32 silly resolved        email: 'brian.noguchi@gmail.com',
+32 silly resolved        url: 'https://github.com/bnoguchi/' },
+32 silly resolved     main: './index.js',
+32 silly resolved     directories: { lib: '.' },
+32 silly resolved     dependencies:
+32 silly resolved      { bcrypt: '>=0.5.0',
+32 silly resolved        mongoose: '>=2.4.8',
+32 silly resolved        everyauth: '>=0.2.28',
+32 silly resolved        'mongoose-types': '>=1.0.3' },
+32 silly resolved     devDependencies:
+32 silly resolved      { express: '>=2.3.2',
+32 silly resolved        jade: '>=0.12.1',
+32 silly resolved        mocha: '>=0.10.1',
+32 silly resolved        should: '>=0.5.1' },
+32 silly resolved     scripts: { test: 'make' },
+32 silly resolved     engines: { node: '>=0.4.0' },
+32 silly resolved     readme: 'mongoose-auth\n=============\n\nUser authentication plugin for mongoose node.js orm.\n\nmongoose-auth enables you to support authorization in any number of ways\nvia authorization strategies.\n\nAn authorization strategy is how you authorize your user. Currently\nmongoose-auth supports the following authorization strategies:\n\n- `password`\n- `facebook`\n- `twitter`\n- `github`\n- `instagram`\n- `google`\n\nmongoose-auth does 3 things:\n\n1. Schema decoration\n2. (optional) Drop in routing for \n   [connect](https://github.com/senchalabs/connect) apps.\n3. (optional) Dynamic helpers for \n   [express](https://github.com/visionmedia/express) apps.\n\nIt integrates the [everyauth](https://github.com/bnoguchi/everyauth) module\nto help it take care of the routing and helpers. everyauth is a general\npurpose npm module for authentication & authorization that can be used\nindependently of mongoose.\n\n## Schema Decoration\n\nAs you add successive authorization strategies, mongoose-auth at a bare\nminimum augments your schema with typed attributes corresponding to parameters\nrelated to your chosen authorization strategies. For example, if facebook is \none of your authorization strategies, then it will add attributes to your \nUser Schema such as \'fb.id\' and \'fb.email\'.\n\nTo decorate your schema:\n\n```javascript\n    var mongoose = require(\'mongoose\')\n      , Schema = mongoose.Schema\n      , mongooseAuth = require(\'mongoose-auth\');\n    \n    var UserSchema = new Schema({});\n    UserSchema.plugin(mongooseAuth, {\n      facebook: true\n    });\n```\n\n## Beyond Schema Decoration: Routing\n\nApplications require more than just User Schema augmentation in order\nto implement a complete authorization strategy. Applications also need\nroutes exposing the one or more steps involved for a given authorization\nstrategy. Moreover, applications each handle in their own unique way how\nthey want to respond to successful or failed logins (in addition to logout\nhandling). If you are not using a \n[connect](https://github.com/senchalabs/connect), then you will have to\nset all of this up yourself. In this case, mongoose-auth *only* provides\nyou with Schema decoration.\n\nBut, if you are building your app on top of\n[connect](https://github.com/senchalabs/connect), then mongoose-auth\nprovides drop in solutions for you. Here is how you can get access\nto the routing that mongoose-auth provides. Not the "STEP X: ..."\ncomments:\n\n```javascript\n    var mongoose = require(\'mongoose\')\n      , Schema = mongoose.Schema\n      , mongooseAuth = require(\'mongoose-auth\');\n    \n    var UserSchema = new Schema({})\n      , User;\n   \n    // STEP 1: Schema Decoration and Configuration for the Routing\n    UserSchema.plugin(mongooseAuth, {\n        // Here, we attach your User model to every module\n        everymodule: {\n          everyauth: {\n              User: function () {\n                return User;\n              }\n          }\n        }\n        \n      , facebook: {\n          everyauth: {\n              myHostname: \'http://localhost:3000\'\n            , appId: \'YOUR APP ID HERE\'\n            , appSecret: \'YOUR APP SECRET HERE\'\n            , redirectPath: \'/\'\n          }\n        }\n    });\n   \n    mongoose.model(\'User\', UserSchema);\n\n    mongoose.connect(\'mongodb://localhost/example\');\n\n    User = mongoose.model(\'User\');\n\n    var app = express.createServer(\n        express.bodyParser()\n      , express.static(__dirname + "/public")\n      , express.cookieParser()\n      , express.session({ secret: \'esoognom\'})\n      \n        // STEP 2: Add in the Routing\n      , mongooseAuth.middleware()\n\n        // IMPORTANT!!!!!!! Do not add app.router, to your middleware chain \n        // explicitly, or you will run into problems accessing `req.user`\n        // i.e., do not use app.use(app.router). Let express do this for you\n        // automatically for you upon your first app.get or app.post.\n    );\n   \n    // STEP 3: Add in Dynamic View Helpers (only if you are using express)\n    mongooseAuth.helpExpress(app);\n\n    app.listen(3000);\n```\n\n## View Helpers and Convenience Methods & Getters\n\nIn "Step 3" of the last code sample, we are adding dynamic view helpers, for if\nyou are using the [Express](https://github.com/visionmedia/express) web framework.\nThis automically gives you access to a convenient `everyauth` local variable from\nyour view, so you do not have to pass `req` as a local to your view:\n\n- `everyauth.loggedIn` - a Boolean getter that tells you if the request is by a logged in user\n- `everyauth.user` - the mongoose User document associated with the session\n- `everyauth.facebook` - The is equivalent to what is stored at `req.session.auth.facebook`, \n  so you can do things like ...\n- `everyauth.facebook.user` - returns the user json provided from the OAuth provider.\n- `everyauth.facebook.accessToken` - returns the access_token provided from the OAuth provider\n  for authorized API calls on behalf of the user.\n- And you also get this pattern for other modules - e.g., `everyauth.twitter.user`, \n  `everyauth.github.user`, etc.\n\nYou also get access to the view helper\n\n- `user` - the same as `everyauth.user` above\n\nAs an example of how you would use these, consider the following `./views/user.jade` jade template:\n\n    .user-id\n      .label User Id\n      .value #{user.id}\n    .facebook-id\n      .label User Facebook Id\n      .value #{everyauth.facebook.user.id}\n\nThe "STEP 2: Add in the Routing" step in the last code sample also provides convenience methods on the\n`ServerRequest` instance `req`. From any scope that has access to `req`, you get the following\nconvenience getter and method:\n\n- `req.loggedIn` - a Boolean getter that tells you if the request is by a logged in user\n- `req.user`     - the mongoose User document associated with the session\n- `req.logout()` - clears the sesion of your auth data\n\n## Using Multiple Authorization Strategies at Once\n\nYou can also use multiple authorization strategies in the same application.\nHere is an example, using 5 authorization strategies:\n\n```javascript\n    // A configuration file for holding all of your\n    // 3rd party OAuth credentials\n    var conf = require(\'./conf\');\n    UserSchema.plugin(mongooseAuth, {\n        // Here, we attach your User model to every module\n        everymodule: {\n          everyauth: {\n              User: function () {\n                return User;\n              }\n          }\n        }\n      , facebook: {\n          everyauth: {\n              myHostname: \'http://localhost:3000\'\n            , appId: conf.fb.appId\n            , appSecret: conf.fb.appSecret\n            , redirectPath: \'/\'\n          }\n        }\n      , twitter: {\n          everyauth: {\n              myHostname: \'http://localhost:3000\'\n            , consumerKey: conf.twit.consumerKey\n            , consumerSecret: conf.twit.consumerSecret\n            , redirectPath: \'/\'\n          }\n        }\n      , password: {\n            everyauth: {\n                getLoginPath: \'/login\'\n              , postLoginPath: \'/login\'\n              , loginView: \'login.jade\'\n              , getRegisterPath: \'/register\'\n              , postRegisterPath: \'/register\'\n              , registerView: \'register.jade\'\n              , loginSuccessRedirect: \'/\'\n              , registerSuccessRedirect: \'/\'\n            }\n        }\n      , github: {\n          everyauth: {\n              myHostname: \'http://localhost:3000\'\n            , appId: conf.github.appId\n            , appSecret: conf.github.appSecret\n            , redirectPath: \'/\'\n          }\n        }\n      , instagram: {\n          everyauth: {\n              myHostname: \'http://localhost:3000\'\n            , appId: conf.instagram.clientId\n            , appSecret: conf.instagram.clientSecret\n            , redirectPath: \'/\'\n          }\n        }\n    });\n```\n\n## Example\n\nThere is an example app located in [./example](https://github.com/bnoguchi/mongoose-auth/tree/master/example).\nTo run it:\n\n    $ cd example\n    $ node server.js\n\nThen navigate to [http://localhost:3000/](http://localhost:3000)\n\n## Recipe 1: Linking Multiple Account Logins Together\n\nA common recipe is allowing a user to login via multiple accounts *and* to link those accounts under one user\ndocument.\n\nThis can be done in the following way:\n\nThe real magic lies with https://github.com/bnoguchi/everyauth/, and it should be more obvious once \nI document everyauth more and document mongoose-auth\'s relationship to everyauth.\n\nIn `everyauth`\'s design, every auth module is defined as a set of steps, which are exposed in such a way for \nyou to over-ride. The step that is of particular interest for this scenario is the `findOrCreateUser` step \nrequired by every `everyauth` module.  `mongoose-auth` defines a default version of this `findOrCreateUser` \nstep for each `everyauth` auth module it supports (You can find these default definitions in \n"lib/modules/#{moduleName}/everyauth.js" -- e.g., see \n[.lib/modules/facebook/everyauth.js](https://github.com/bnoguchi/mongoose-auth/tree/master/lib/modules/facebook/everyauth.js)).\n\nSo for example, this is how you would over-ride the default `findOrCreateUser` step for the \nfacebook module if you are using both the facebook and password module:\n\n```javascript\nUserSchema.plugin(mongooseAuth, {\n  facebook: {\n    everyauth: {\n        myHostname: ...\n      , ...\n      , findOrCreateUser: function (session, accessTok, accessTokExtra, fbUser) {\n          var promise = this.Promise()\n              , User = this.User()();\n          User.findById(session.auth.userId, function (err, user) {\n            if (err) return promise.fail(err);\n            if (!user) {\n              User.where(\'password.login\', fbUser.email).findOne( function (err, user) {\n                if (err) return promise.fail(err);\n                if (!user) {\n                  User.createWithFB(fbUser, accessTok, accessTokExtra.expires, function (err, createdUser) {\n                    if (err) return promise.fail(err);\n                    return promise.fulfill(createdUser);\n                  });\n                } else {\n                  assignFbDataToUser(user, accessTok, accessTokExtra, fbUser);\n                  user.save( function (err, user) {\n                    if (err) return promise.fail(err);\n                    promise.fulfill(user);\n                  });\n                }\n              });\n            } else {\n              assignFbDataToUser(user, accessTok, accessTokExtra, fbUser);\n              \n              // Save the new data to the user doc in the db\n              user.save( function (err, user) {\n                if (err) return promise.fail(err);\n                promise.fuilfill(user);\n              });\n            }\n          });\n        });\n        return promise; // Make sure to return the promise that promises the user\n      }\n  }\n});\n\n// Assign all properties - see lib/modules/facebook/schema.js for details\nfunction assignFbDataToUser (user, accessTok, accessTokExtra, fbUser) {\n  user.fb.accessToken = accessTok;\n  user.fb.expires = accessTokExtra.expires;\n  user.fb.id = fbUser.id;\n  user.fb.name.first = fbUser.first_name;\n  // etc. more assigning...\n}\n```\n\nAs this is a common recipe, I plan on adding support for this into `everyauth` and `mongoose-auth`, so it\'s more drop-in, and developers do not have to add this custom code themselves. The intent is for common things like this to be invisible to the developer, so it just *works* *like* *magic*. So, in the near future, you won\'t have to over-ride the findOrCreateUser step every time you want this feature. This will be coming soon.\n\n## Recipe 2: Configuring Email or Phone to be your Login for the Password Module\n\nBy default, `everyauth` and therefore `mongoose-auth` use the attribute `login` as the default attribute used for logging in\nwith the password module.\n\nHowever, the need can arise to use a different attribute (such as email) that implies a different schema (use `email: String` instead of `login: String`)\nin addition to different validation assumptions (email validations are more strict that login handle validations).\n\nLuckily, `mongoose-auth` provide support for this out of the box. All you need to do is (look for the line labeled "THIS NEXT LINE IS THE ONLY ADDITION"):\n\n```javascript\nUserSchema.plugin(mongooseAuth, {\n    // Here, we attach your User model to every module\n    everymodule: {\n      everyauth: {\n          User: function () {\n            return User;\n          }\n      }\n    }\n  , password: {\n        // THIS NEXT LINE IS THE ONLY ADDITION\n        loginWith: \'email\' // Or loginWith: \'phone\'\n\n      , everyauth: {\n            getLoginPath: \'/login\'\n          , postLoginPath: \'/login\'\n          , loginView: \'login.jade\'\n          , getRegisterPath: \'/register\'\n          , postRegisterPath: \'/register\'\n          , registerView: \'register.jade\'\n          , loginSuccessRedirect: \'/\'\n          , registerSuccessRedirect: \'/\'\n        }\n    }\n});\n```\n\nAutomatically, `mongoose-auth` will use an `email` String attribute in your User schema\ninstead of the default `login` String attribute. Moreover, it will automatically add in\nvalidation checks to make sure that the email is valid before registering a user through\nthe registration process of the password module.\n\n## Recipe 3: Extra password registration data besides login + password\n\nSometimes your registration will ask for more information from the user besides the login and password.\n\nFor this particular scenario, you can configure `extraParams`.\n\n```javascript\nUserSchema.plugin(mongooseAuth, {\n    // Here, we attach your User model to every module\n    everymodule: {\n      everyauth: {\n          User: function () {\n            return User;\n          }\n      }\n    }\n  , password: {\n        extraParams: {\n            phone: String\n          , name: {\n                first: String\n              , last: String\n            }\n        }\n\n      , everyauth: {\n            getLoginPath: \'/login\'\n          , postLoginPath: \'/login\'\n          , loginView: \'login.jade\'\n          , getRegisterPath: \'/register\'\n          , postRegisterPath: \'/register\'\n          , registerView: \'register.jade\'\n          , loginSuccessRedirect: \'/\'\n          , registerSuccessRedirect: \'/\'\n        }\n    }\n});\n```\n\nWhat this effectively does is:\n\n1. Adds `phone`, `name.first`, and `name.last` as attributes to your `UserSchema`.\n2. Automatically extracts the registration parameters after a visitor submits the registration\n   form and saves them to a new `User` document.\n   The registration form `<input>` `name`s should be, e.g., in the example above: \'phone\', \n   \'name[first]\', and \'name[last]\'.\n\nPlease see [./example/server.js](https://github.com/bnoguchi/mongoose-auth/tree/master/example/server.js#L45)\nfor a live example.\n\n## Recipe 4: Adding more attributes to your schema\n\nThis one ha come up enough that it is here as a recipe, even though it is not specific to `mongoose-auth`. Suppose\nyou want to add a special attribute such as `roles: [String]` to your UserSchema. This is something that you can do\nusing just `mongoose`\n\n```javascript\nvar UserSchema = new mongoose.Schema({\n    roles: [String]\n  , // other custom attributes\n});\n\nUserSchema.plugin(mongooseAuth, {\n  // mongooseAuth *adds* other attributes to your UserSchema\n  // depending on the auth modules you choose.\n});\n```\n\n## Recipe 5: Customizing how you do password login authentication\n\nCurrently, `mongoose-auth` does password authentication by login and password. Suppose you also want to authenticate\nby checking against an additional parameter, like `active`, which is a Boolean attribute on your UserSchema that\nindicates whether this user has been activated or not. Then you can modify the `authenticate` everyauth step in the\nfollowing way:\n\n```javascript\nvar UserSchema = new Schema({\n  active: Boolean\n}), User;\nUserSchema.plugin(mongooseAuth, {\n    everymodule: {\n      everyauth: {\n          User: function () {\n            return User;\n          }\n      }\n    }\n  , password: {\n        loginWith: \'email\' \n      , everyauth: {\n            getLoginPath: \'/login\'\n          , postLoginPath: \'/login\'\n          , loginView: \'login.jade\'\n          , getRegisterPath: \'/register\'\n          , postRegisterPath: \'/register\'\n          , registerView: \'register.jade\'\n          , loginSuccessRedirect: \'/\'\n          , registerSuccessRedirect: \'/\'\n   \n            // WHAT YOU ADD IS THE FOLLOWING:\n            // The logic is adapted from the default authenticate\n            // implementation in lib/modules/password/everyauth.js\n          , authenticate: function (login, password) {\n              var promise\n                , errors = []; \n              if (!login) errors.push(\'Missing login.\');\n              if (!password) errors.push(\'Missing password.\');\n              if (errors.length) return errors;\n\n              promise = this.Promise();\n              this.User()().authenticate(login, password, function (err, user) {\n                if (err) {\n                  errors.push(err.message || err);\n                  return promise.fulfill(errors);\n                }   \n                if (!user) {\n                  errors.push(\'Failed login.\');\n                  return promise.fulfill(errors);\n                }\n                \n                // The following block is the new code\n                if (!user.active) {\n                  errors.push(\'You are not yet activated.\');\n                  return promise.fulfill(errors);\n                }\n                \n                promise.fulfill(user);\n              });\n              return promise;\n            }\n        }\n    }\n});\nmongoose.model(\'User\', UserSchema);\n\nUser = mongoose.model(\'User\');\n```\n\n### License\nMIT License\n\n---\n### Author\nBrian Noguchi\n',
+32 silly resolved     _id: 'mongoose-auth@0.0.12',
+32 silly resolved     _from: 'mongoose-auth' } ]
+33 info install mongoose-auth@0.0.12 into C:\Users\john.kabler\Desktop\NTwitter
+34 info installOne mongoose-auth@0.0.12
+35 verbose from cache C:\Users\john.kabler\AppData\Roaming\npm-cache\mongoose-auth\0.0.12\package\package.json
+36 info C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth unbuild
+37 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\package.json
+38 verbose tar unpack C:\Users\john.kabler\AppData\Roaming\npm-cache\mongoose-auth\0.0.12\package.tgz
+39 silly gunzTarPerm modes [ '755', '644' ]
+40 silly gunzTarPerm extractEntry package.json
+41 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+42 silly gunzTarPerm extractEntry .npmignore
+43 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+46 silly gunzTarPerm extractEntry index.js
+47 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+48 silly gunzTarPerm extractEntry example/conf.js
+49 silly gunzTarPerm modified mode [ 'example/conf.js', 438, 420 ]
+50 silly gunzTarPerm extractEntry example/server.js
+51 silly gunzTarPerm modified mode [ 'example/server.js', 438, 420 ]
+52 silly gunzTarPerm extractEntry example/views/home.jade
+53 silly gunzTarPerm modified mode [ 'example/views/home.jade', 438, 420 ]
+54 silly gunzTarPerm extractEntry example/views/layout.jade
+55 silly gunzTarPerm modified mode [ 'example/views/layout.jade', 438, 420 ]
+56 silly gunzTarPerm extractEntry example/views/login.jade
+57 silly gunzTarPerm modified mode [ 'example/views/login.jade', 438, 420 ]
+58 silly gunzTarPerm extractEntry example/views/register.jade
+59 silly gunzTarPerm modified mode [ 'example/views/register.jade', 438, 420 ]
+60 silly gunzTarPerm extractEntry lib/modules/confirmable/connect.js
+61 silly gunzTarPerm modified mode [ 'lib/modules/confirmable/connect.js', 438, 420 ]
+62 silly gunzTarPerm extractEntry lib/modules/confirmable/view.jade
+63 silly gunzTarPerm modified mode [ 'lib/modules/confirmable/view.jade', 438, 420 ]
+64 silly gunzTarPerm extractEntry lib/modules/everymodule/everyauth.js
+65 silly gunzTarPerm modified mode [ 'lib/modules/everymodule/everyauth.js', 438, 420 ]
+66 silly gunzTarPerm extractEntry lib/modules/everymodule/index.js
+67 silly gunzTarPerm modified mode [ 'lib/modules/everymodule/index.js', 438, 420 ]
+68 silly gunzTarPerm extractEntry lib/modules/everymodule/plugin.js
+69 silly gunzTarPerm modified mode [ 'lib/modules/everymodule/plugin.js', 438, 420 ]
+70 silly gunzTarPerm extractEntry lib/modules/everymodule/schema.js
+71 silly gunzTarPerm modified mode [ 'lib/modules/everymodule/schema.js', 438, 420 ]
+72 silly gunzTarPerm extractEntry lib/modules/facebook/everyauth.js
+73 silly gunzTarPerm modified mode [ 'lib/modules/facebook/everyauth.js', 438, 420 ]
+74 silly gunzTarPerm extractEntry lib/modules/facebook/index.js
+75 silly gunzTarPerm modified mode [ 'lib/modules/facebook/index.js', 438, 420 ]
+76 silly gunzTarPerm extractEntry lib/modules/facebook/plugin.js
+77 silly gunzTarPerm modified mode [ 'lib/modules/facebook/plugin.js', 438, 420 ]
+78 silly gunzTarPerm extractEntry lib/modules/facebook/schema.js
+79 silly gunzTarPerm modified mode [ 'lib/modules/facebook/schema.js', 438, 420 ]
+80 silly gunzTarPerm extractEntry lib/modules/github/everyauth.js
+81 silly gunzTarPerm modified mode [ 'lib/modules/github/everyauth.js', 438, 420 ]
+82 silly gunzTarPerm extractEntry lib/modules/github/index.js
+83 silly gunzTarPerm modified mode [ 'lib/modules/github/index.js', 438, 420 ]
+84 silly gunzTarPerm extractEntry lib/modules/github/plugin.js
+85 silly gunzTarPerm modified mode [ 'lib/modules/github/plugin.js', 438, 420 ]
+86 silly gunzTarPerm extractEntry lib/modules/github/schema.js
+87 silly gunzTarPerm modified mode [ 'lib/modules/github/schema.js', 438, 420 ]
+88 silly gunzTarPerm extractEntry lib/modules/google/everyauth.js
+89 silly gunzTarPerm modified mode [ 'lib/modules/google/everyauth.js', 438, 420 ]
+90 silly gunzTarPerm extractEntry lib/modules/google/index.js
+91 silly gunzTarPerm modified mode [ 'lib/modules/google/index.js', 438, 420 ]
+92 silly gunzTarPerm extractEntry lib/modules/google/plugin.js
+93 silly gunzTarPerm modified mode [ 'lib/modules/google/plugin.js', 438, 420 ]
+94 silly gunzTarPerm extractEntry lib/modules/google/schema.js
+95 silly gunzTarPerm modified mode [ 'lib/modules/google/schema.js', 438, 420 ]
+96 silly gunzTarPerm extractEntry lib/modules/instagram/everyauth.js
+97 silly gunzTarPerm modified mode [ 'lib/modules/instagram/everyauth.js', 438, 420 ]
+98 silly gunzTarPerm extractEntry lib/modules/instagram/index.js
+99 silly gunzTarPerm modified mode [ 'lib/modules/instagram/index.js', 438, 420 ]
+100 silly gunzTarPerm extractEntry lib/modules/instagram/plugin.js
+101 silly gunzTarPerm modified mode [ 'lib/modules/instagram/plugin.js', 438, 420 ]
+102 silly gunzTarPerm extractEntry lib/modules/instagram/schema.js
+103 silly gunzTarPerm modified mode [ 'lib/modules/instagram/schema.js', 438, 420 ]
+104 silly gunzTarPerm extractEntry lib/modules/password/everyauth.js
+105 silly gunzTarPerm modified mode [ 'lib/modules/password/everyauth.js', 438, 420 ]
+106 silly gunzTarPerm extractEntry lib/modules/password/index.js
+107 silly gunzTarPerm modified mode [ 'lib/modules/password/index.js', 438, 420 ]
+108 silly gunzTarPerm extractEntry lib/modules/password/plugin.js
+109 silly gunzTarPerm modified mode [ 'lib/modules/password/plugin.js', 438, 420 ]
+110 silly gunzTarPerm extractEntry lib/modules/password/schema.js
+111 silly gunzTarPerm modified mode [ 'lib/modules/password/schema.js', 438, 420 ]
+112 silly gunzTarPerm extractEntry lib/modules/registration/connect.js
+113 silly gunzTarPerm modified mode [ 'lib/modules/registration/connect.js', 438, 420 ]
+114 silly gunzTarPerm extractEntry lib/modules/twitter/everyauth.js
+115 silly gunzTarPerm modified mode [ 'lib/modules/twitter/everyauth.js', 438, 420 ]
+116 silly gunzTarPerm extractEntry lib/modules/twitter/index.js
+117 silly gunzTarPerm modified mode [ 'lib/modules/twitter/index.js', 438, 420 ]
+118 silly gunzTarPerm extractEntry lib/modules/twitter/plugin.js
+119 silly gunzTarPerm modified mode [ 'lib/modules/twitter/plugin.js', 438, 420 ]
+120 silly gunzTarPerm extractEntry lib/modules/twitter/schema.js
+121 silly gunzTarPerm modified mode [ 'lib/modules/twitter/schema.js', 438, 420 ]
+122 silly gunzTarPerm extractEntry Makefile
+123 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+124 silly gunzTarPerm extractEntry test/authplugin.test.js
+125 silly gunzTarPerm modified mode [ 'test/authplugin.test.js', 438, 420 ]
+126 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\package.json
+127 info preinstall mongoose-auth@0.0.12
+128 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\package.json
+129 verbose readDependencies using package.json deps
+130 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\package.json
+131 verbose readDependencies using package.json deps
+132 verbose cache add [ 'bcrypt@>=0.5.0', null ]
+133 silly cache add name=undefined spec="bcrypt@>=0.5.0" args=["bcrypt@>=0.5.0",null]
+134 verbose parsed url { pathname: 'bcrypt@%3E=0.5.0',
+134 verbose parsed url   path: 'bcrypt@%3E=0.5.0',
+134 verbose parsed url   href: 'bcrypt@%3E=0.5.0' }
+135 silly cache add name="bcrypt" spec=">=0.5.0" args=["bcrypt",">=0.5.0"]
+136 verbose parsed url { pathname: '%3E=0.5.0', path: '%3E=0.5.0', href: '%3E=0.5.0' }
+137 verbose addNamed [ 'bcrypt', '>=0.5.0' ]
+138 verbose addNamed [ null, '>=0.5.0' ]
+139 silly addNameRange { name: 'bcrypt', range: '>=0.5.0', hasData: false }
+140 verbose cache add [ 'mongoose-types@>=1.0.3', null ]
+141 silly cache add name=undefined spec="mongoose-types@>=1.0.3" args=["mongoose-types@>=1.0.3",null]
+142 verbose parsed url { pathname: 'mongoose-types@%3E=1.0.3',
+142 verbose parsed url   path: 'mongoose-types@%3E=1.0.3',
+142 verbose parsed url   href: 'mongoose-types@%3E=1.0.3' }
+143 silly cache add name="mongoose-types" spec=">=1.0.3" args=["mongoose-types",">=1.0.3"]
+144 verbose parsed url { pathname: '%3E=1.0.3', path: '%3E=1.0.3', href: '%3E=1.0.3' }
+145 verbose addNamed [ 'mongoose-types', '>=1.0.3' ]
+146 verbose addNamed [ null, '>=1.0.3' ]
+147 silly addNameRange { name: 'mongoose-types', range: '>=1.0.3', hasData: false }
+148 verbose url raw bcrypt
+149 verbose url resolving [ 'https://registry.npmjs.org/', './bcrypt' ]
+150 verbose url resolved https://registry.npmjs.org/bcrypt
+151 verbose etag "3AWLTHEXE747YP3WD5FFZG4HL"
+152 http GET https://registry.npmjs.org/bcrypt
+153 verbose url raw mongoose-types
+154 verbose url resolving [ 'https://registry.npmjs.org/', './mongoose-types' ]
+155 verbose url resolved https://registry.npmjs.org/mongoose-types
+156 verbose etag "CN7XGLT6GD17617UX971LDTRK"
+157 http GET https://registry.npmjs.org/mongoose-types
+158 http 304 https://registry.npmjs.org/bcrypt
+159 silly registry.get cb [ 304,
+159 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+159 silly registry.get     etag: '"3AWLTHEXE747YP3WD5FFZG4HL"',
+159 silly registry.get     date: 'Tue, 17 Jul 2012 03:36:50 GMT',
+159 silly registry.get     'content-length': '0' } ]
+160 verbose etag bcrypt from cache
+161 silly addNameRange number 2 { name: 'bcrypt', range: '>=0.5.0', hasData: true }
+162 silly addNameRange versions [ 'bcrypt',
+162 silly addNameRange   [ '0.1.2',
+162 silly addNameRange     '0.2.0',
+162 silly addNameRange     '0.2.1',
+162 silly addNameRange     '0.1.3',
+162 silly addNameRange     '0.2.2',
+162 silly addNameRange     '0.2.3',
+162 silly addNameRange     '0.2.4',
+162 silly addNameRange     '0.3.0',
+162 silly addNameRange     '0.3.1',
+162 silly addNameRange     '0.3.2',
+162 silly addNameRange     '0.4.0',
+162 silly addNameRange     '0.4.1',
+162 silly addNameRange     '0.5.0',
+162 silly addNameRange     '0.6.0',
+162 silly addNameRange     '0.7.0' ] ]
+163 verbose read json C:\Users\john.kabler\AppData\Roaming\npm-cache\bcrypt\0.7.0\package\package.json
+164 http 304 https://registry.npmjs.org/mongoose-types
+165 silly registry.get cb [ 304,
+165 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+165 silly registry.get     etag: '"CN7XGLT6GD17617UX971LDTRK"',
+165 silly registry.get     date: 'Tue, 17 Jul 2012 03:36:50 GMT',
+165 silly registry.get     'content-length': '0' } ]
+166 verbose etag mongoose-types from cache
+167 silly addNameRange number 2 { name: 'mongoose-types', range: '>=1.0.3', hasData: true }
+168 silly addNameRange versions [ 'mongoose-types',
+168 silly addNameRange   [ '0.0.1', '0.0.2', '1.0.0', '1.0.1', '1.0.2', '1.0.3' ] ]
+169 verbose read json C:\Users\john.kabler\AppData\Roaming\npm-cache\mongoose-types\1.0.3\package\package.json
+170 silly resolved [ { name: 'bcrypt',
+170 silly resolved     description: 'A bcrypt library for NodeJS.',
+170 silly resolved     keywords:
+170 silly resolved      [ 'bcrypt',
+170 silly resolved        'password',
+170 silly resolved        'auth',
+170 silly resolved        'authentication',
+170 silly resolved        'encryption',
+170 silly resolved        'crypt',
+170 silly resolved        'crypto' ],
+170 silly resolved     main: './bcrypt',
+170 silly resolved     version: '0.7.0',
+170 silly resolved     author: { name: 'Nick Campbell', url: 'http://github.com/ncb000gt' },
+170 silly resolved     engines: { node: '>= 0.6.0' },
+170 silly resolved     repository:
+170 silly resolved      { type: 'git',
+170 silly resolved        url: 'http://github.com/ncb000gt/node.bcrypt.js.git' },
+170 silly resolved     licenses: [ [Object] ],
+170 silly resolved     bugs: { url: 'http://github.com/ncb000gt/node.bcrypt.js/issues' },
+170 silly resolved     scripts: { test: 'make test', install: 'node-gyp rebuild' },
+170 silly resolved     dependencies: { bindings: '1.0.0' },
+170 silly resolved     devDependencies: { nodeunit: '>=0.6.4' },
+170 silly resolved     contributors:
+170 silly resolved      [ [Object],
+170 silly resolved        [Object],
+170 silly resolved        [Object],
+170 silly resolved        [Object],
+170 silly resolved        [Object],
+170 silly resolved        [Object],
+170 silly resolved        [Object],
+170 silly resolved        [Object],
+170 silly resolved        [Object],
+170 silly resolved        [Object],
+170 silly resolved        [Object] ],
+170 silly resolved     gypfile: true,
+170 silly resolved     readme: 'node.bcrypt.js\n=============\n\n[![Build Status](https://secure.travis-ci.org/ncb000gt/node.bcrypt.js.png)](http://travis-ci.org/#!/ncb000gt/node.bcrypt.js) \n\nLib to help you hash passwords.\n[bcrypt on wikipedia][bcryptwiki]\n\nCatalyst for this module: [How To Safely Store A Password][codahale]\n\n\nVersion Compatability\n=============\n\n<table>\n<tr>\n<td>Node Ver</td><td>Bcrypt Version</td>\n</tr>\n<tr>\n<td>&lt;= 0.4.x</td><td>&lt;= 0.4.x</td>\n</tr>\n<tr>\n<td>&gt;= 0.6.x</td><td>&gt;= 0.5.x</td>\n</tr>\n</table>\n\n\nSecurity Issues/Concerns\n=============\n\nAs should be the case with any security tool, this library should be scrutinized by anyone using it. If you find or suspect an issue with the code- please bring it to my attention and I\'ll spend some time trying to make sure that this tool is as secure as possible.\n\nTo make it easier for people using this tool to analyze what has been surveyed, here is a list of BCrypt related security issues/concerns as they\'ve come up.\n\n* An [issue with passwords][jtr] was found with a version of the Blowfish algorithm developed for John the Ripper. This is not present in the OpenBSD version and is thus not a problem for this module. HT [zooko][zooko].\n\nDependencies\n=============\n\n* NodeJS\n* OpenSSL (Development Libraries (header files) for compilation)\n\nFrom NPM\n============\n\nnpm install bcrypt\n\n\nFrom Source\n============\n\nAssuming you\'ve already built node, you can compile the module with `node-gyp`:\n\n    git clone git://github.com/ncb000gt/node.bcrypt.js.git\n    cd node.bcrypt.js\n    node-gyp configure\n    node-gyp build\n\nNote: if you do not have node-gyp installed, install it using: `npm install -g node-gyp`\n\nUsage - Sync\n============\n\nTo hash a password:  \n\n    var bcrypt = require(\'bcrypt\');  \n    var salt = bcrypt.genSaltSync(10);  \n    var hash = bcrypt.hashSync("B4c0/\\/", salt);\n    // Store hash in your password DB.\n\nTo check a password:  \n\n    // Load hash from your password DB.\n    bcrypt.compareSync("B4c0/\\/", hash); // true    \n    bcrypt.compareSync("not_bacon", hash); // false\n\nAuto-gen a salt and hash:\n\n    var hash = bcrypt.hashSync(\'bacon\', 8)\n\nUsage - Async\n============\n\nTo hash a password:  \n\n    var bcrypt = require(\'bcrypt\');  \n    bcrypt.genSalt(10, function(err, salt) {\n        bcrypt.hash("B4c0/\\/", salt, function(err, hash) {\n            // Store hash in your password DB.\n        });\n    });\n\nTo check a password:  \n\n    // Load hash from your password DB.\n    bcrypt.compare("B4c0/\\/", hash, function(err, res) {\n        // res == true    \n    });\n    bcrypt.compare("not_bacon", hash, function(err, res) {\n        // res = false\n    });\n\nAuto-gen a salt and hash:\n\n    bcrypt.hash(\'bacon\', 8, function(err, hash) {\n    });\n\nAPI\n============\n\n`BCrypt.`\n\n  * `genSaltSync(rounds, seed_length)`\n    * `rounds` - [OPTIONAL] - the number of rounds to process the data for. (default - 10)\n    * `seed_length` - [OPTIONAL] - RAND_bytes wants a length. to make that a bit flexible, you can specify a seed_length. (default - 20)\n  * `genSalt(rounds, seed_length, cb)`\n    * `rounds` - [OPTIONAL] - the number of rounds to process the data for. (default - 10)\n    * `seed_length` - [OPTIONAL] - RAND_bytes wants a length. to make that a bit flexible, you can specify a seed_length. (default - 20)\n    * `cb` - [REQUIRED] - a callback to be fired once the salt has been generated. uses eio making it asynchronous.\n      * `err` - First parameter to the callback detailing any errors.\n      * `salt` - Second parameter to the callback providing the generated salt.\n  * `hashSync(data, salt)`\n    * `data` - [REQUIRED] - the data to be encrypted.\n    * `salt` - [REQUIRED] - the salt to be used in encryption.\n  * `hash(data, salt, cb)`\n    * `data` - [REQUIRED] - the data to be encrypted.\n    * `salt` - [REQUIRED] - the salt to be used to hash the password. if specified as a number then a salt will be generated and used (see examples).\n    * `cb` - [REQUIRED] - a callback to be fired once the data has been encrypted. uses eio making it asynchronous.\n      * `err` - First parameter to the callback detailing any errors.\n      * `encrypted` - Second parameter to the callback providing the encrypted form.\n  * `compareSync(data, encrypted)`\n    * `data` - [REQUIRED] - data to compare.\n    * `encrypted` - [REQUIRED] - data to be compared to.\n  * `compare(data, encrypted, cb)`\n    * `data` - [REQUIRED] - data to compare.\n    * `encrypted` - [REQUIRED] - data to be compared to.\n    * `cb` - [REQUIRED] - a callback to be fired once the data has been compared. uses eio making it asynchronous.\n      * `err` - First parameter to the callback detailing any errors.\n      * `same` - Second parameter to the callback providing whether the data and encrypted forms match [true | false].\n  * `getRounds(encrypted)` - return the number of rounds used to encrypt a given hash\n    * `encrypted` - [REQUIRED] - hash from which the number of rounds used should be extracted.\n\n\nHash Info\n============\n\nThe characters that comprise the resultant hash are `./ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789$`.\n\nTesting\n============\n\nI am using nodeunit. I like the way you write tests with it and I like the default output. As such you\'ll need it to run the tests. I suspect my tests would run on an older version, but these were written and worked against 0.5.1\n\n    npm install nodeunit@0.5.1\n    nodeunit test/\n\nCredits\n============\n\nThe code for this comes from a few sources:\n\n* blowfish.cc - OpenBSD\n* bcrypt.cc - OpenBSD\n* bcrypt::gen_salt - [gen_salt inclusion to bcrypt][bcryptgs]\n* bcrypt_node.cc - me\n\nContributors\n============\n\n* [Antonio Salazar Cardozo][shadowfiend] - Early MacOS X support (when we used libbsd)\n* [Ben Glow][pixelglow] - Fixes for thread safety with async calls\n* [Van Nguyen][thegoleffect] - Found a timing attack in the comparator\n* [NewITFarmer][newitfarmer] - Initial Cygwin support\n* [David Trejo][dtrejo] - packaging fixes\n* [Alfred Westerveld][alfredwesterveld] - packaging fixes\n* [Vincent Côté-Roy][vincentr] - Testing around concurrency issues\n* [Lloyd Hilaiel][lloyd] - Documentation fixes\n* [Roman Shtylman][shtylman] - Code refactoring, general rot reduction, compile options, better memory management with delete and new, and an upgrade to libuv over eio/ev.\n* [Vadim Graboys][vadimg] - Code changes to support 0.5.5+\n* [Ben Noordhuis][bnoordhuis] - Fixed a thread safety issue in nodejs that was perfectly mappable to this module.\n\nLicense\n============\n\nUnless stated elsewhere, file headers or otherwise, the license as stated in the LICENSE file.\n\n\n\n[bcryptwiki]: http://en.wikipedia.org/wiki/Crypt_(Unix)#Blowfish-based_scheme  \n[bcryptgs]: http://mail-index.netbsd.org/tech-crypto/2002/05/24/msg000204.html\n[codahale]: http://codahale.com/how-to-safely-store-a-password/\n[gh13]: https://github.com/ncb000gt/node.bcrypt.js/issues/13\n[jtr]: http://www.openwall.com/lists/oss-security/2011/06/20/2\n\n[shadowfiend]:https://github.com/Shadowfiend\n[thegoleffect]:https://github.com/thegoleffect\n[pixelglow]:https://github.com/pixelglow\n[dtrejo]:https://github.com/dtrejo\n[alfredwesterveld]:https://github.com/alfredwesterveld\n[newitfarmer]:https://github.com/newitfarmer\n[zooko]:https://twitter.com/zooko\n[vincentr]:https://twitter.com/vincentcr\n[lloyd]:https://github.com/lloyd\n[shtylman]:https://github.com/shtylman\n[vadimg]:https://github.com/vadimg\n[bnoordhuis]:https://github.com/bnoordhuis\n',
+170 silly resolved     _id: 'bcrypt@0.7.0',
+170 silly resolved     _from: 'bcrypt@>=0.5.0' },
+170 silly resolved   { name: 'mongoose-types',
+170 silly resolved     description: 'More types for mongoose',
+170 silly resolved     version: '1.0.3',
+170 silly resolved     author: { name: 'Brian Noguchi' },
+170 silly resolved     dependencies: { mongoose: '>= 1.0.16' },
+170 silly resolved     keywords: [ 'mongoose', 'mongo', 'mongodb', 'types' ],
+170 silly resolved     scripts: { test: 'make test' },
+170 silly resolved     engines: { node: '>= 0.1.101' },
+170 silly resolved     main: './index',
+170 silly resolved     licenses: [ [Object] ],
+170 silly resolved     readme: 'mongoose-types - Useful types and type plugins for Mongoose\n==============\n\n### Types include:\n- Email\n- Url\n\n### Plugins include:\n- useTimestamps\n  Adds `createdAt` and `updatedAt` date attributes that get auto-assigned to the most recent create/update timestamp.\n\n### Installation\n    npm install mongoose-types\n\n### Setup\nTo include all of the defined types:\n    var mongoose = require("mongoose");\n    var db = mongoose.createConnection("mongodb://localhost/sampledb");\n    var mongooseTypes = require("mongoose-types");\n    mongooseTypes.loadTypes(mongoose);\n\nYou can also specify that you only want to load and use a limited subset of the types provided:\n    var mongoose = require("mongoose");\n    var db = mongoose.createConnection("mongodb://localhost/sampledb");\n    var mongooseTypes = require("mongoose-types");\n    // Only load the email type\n    mongooseTypes.loadTypes(mongoose, "email");\n\n### Using the types\nOnce you are setup, you can begin to use the new types.\n\n#### Email\n    var Email = mongoose.SchemaTypes.Email;\n    var UserSchema = new Schema({\n      email: {\n          work: Email\n        , home: Email\n      }\n    });\n\n#### Url\n    var Url = mongoose.SchemaTypes.Url;\n    var VisitSchema = new Schema({\n        url: Url\n      , referer: Url\n    });\n\n### Using the plugins\n\n#### The `useTimestamps` plugin\n\n    var mongoose = require("mongoose");\n    var db = mongoose.createConnection("mongodb://localhost/sampledb");\n    var mongooseTypes = require("mongoose-types")\n      , useTimestamps = mongooseTypes.useTimestamps;\n    var UserSchema = new Schema({\n        username: String\n    });\n    UserSchema.plugin(useTimestamps);\n    mongoose.model(\'User\', UserSchema);\n    var User = db.model(\'User\', UserSchema);\n    \n    var user = new User({username: \'Prince\'});\n    user.save(function (err) {\n      console.log(user.createdAt); // Should be approximately now\n      console.log(user.createdAt === user.updatedAt); // true\n\n      // Wait 1 second and then update the user\n      setTimeout( function () {\n        user.username = \'Symbol\';\n        user.save( function (err) {\n          console.log(user.updatedAt); // Should be approximately createdAt + 1 second\n          console.log(user.createdAt < user.updatedAt); // true\n        });\n      }, 1000);\n    });\n\n## Tests\nTo run tests:\n    make test\n\n### Contributors\n- [Brian Noguchi](https://github.com/bnoguchi)\n\n### License\nMIT License\n\n---\n### Author\nBrian Noguchi\n',
+170 silly resolved     _id: 'mongoose-types@1.0.3',
+170 silly resolved     _from: 'mongoose-types@>=1.0.3' } ]
+171 info install bcrypt@0.7.0 into C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth
+172 info install mongoose-types@1.0.3 into C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth
+173 info installOne bcrypt@0.7.0
+174 info installOne mongoose-types@1.0.3
+175 verbose from cache C:\Users\john.kabler\AppData\Roaming\npm-cache\bcrypt\0.7.0\package\package.json
+176 info C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt unbuild
+177 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\package.json
+178 verbose from cache C:\Users\john.kabler\AppData\Roaming\npm-cache\mongoose-types\1.0.3\package\package.json
+179 info C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\mongoose-types unbuild
+180 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\mongoose-types\package.json
+181 verbose tar unpack C:\Users\john.kabler\AppData\Roaming\npm-cache\bcrypt\0.7.0\package.tgz
+182 verbose tar unpack C:\Users\john.kabler\AppData\Roaming\npm-cache\mongoose-types\1.0.3\package.tgz
+183 silly gunzTarPerm modes [ '755', '644' ]
+184 silly gunzTarPerm modes [ '755', '644' ]
+185 silly gunzTarPerm extractEntry package.json
+186 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+187 silly gunzTarPerm extractEntry package.json
+188 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+189 silly gunzTarPerm extractEntry .npmignore
+190 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+191 silly gunzTarPerm extractEntry README.md
+192 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+193 silly gunzTarPerm extractEntry .npmignore
+194 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+195 silly gunzTarPerm extractEntry README.md
+196 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+197 silly gunzTarPerm extractEntry LICENSE
+198 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+199 silly gunzTarPerm extractEntry bcrypt.js
+200 silly gunzTarPerm modified mode [ 'bcrypt.js', 438, 420 ]
+201 silly gunzTarPerm extractEntry CHANGELOG
+202 silly gunzTarPerm modified mode [ 'CHANGELOG', 438, 420 ]
+203 silly gunzTarPerm extractEntry examples/async_compare.js
+204 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 438, 420 ]
+205 silly gunzTarPerm extractEntry index.js
+206 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+207 silly gunzTarPerm extractEntry .gitmodules
+208 silly gunzTarPerm modified mode [ '.gitmodules', 438, 420 ]
+209 silly gunzTarPerm extractEntry lib/index.js
+210 silly gunzTarPerm modified mode [ 'lib/index.js', 438, 420 ]
+211 silly gunzTarPerm extractEntry lib/plugins/useTimestamps.js
+212 silly gunzTarPerm modified mode [ 'lib/plugins/useTimestamps.js', 438, 420 ]
+213 silly gunzTarPerm extractEntry lib/types/email.js
+214 silly gunzTarPerm modified mode [ 'lib/types/email.js', 438, 420 ]
+215 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+216 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 438, 420 ]
+217 silly gunzTarPerm extractEntry .travis.yml
+218 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+219 silly gunzTarPerm extractEntry lib/types/url.js
+220 silly gunzTarPerm modified mode [ 'lib/types/url.js', 438, 420 ]
+221 silly gunzTarPerm extractEntry Makefile
+222 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+223 silly gunzTarPerm extractEntry Makefile
+224 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+225 silly gunzTarPerm extractEntry binding.gyp
+226 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+227 silly gunzTarPerm extractEntry src/bcrypt.cc
+228 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 438, 420 ]
+229 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+230 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 438, 420 ]
+231 silly gunzTarPerm extractEntry src/blowfish.cc
+232 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 438, 420 ]
+233 silly gunzTarPerm extractEntry src/node_blf.h
+234 silly gunzTarPerm modified mode [ 'src/node_blf.h', 438, 420 ]
+235 silly gunzTarPerm extractEntry test/async.js
+236 silly gunzTarPerm modified mode [ 'test/async.js', 438, 420 ]
+237 silly gunzTarPerm extractEntry test/deprecated.js
+238 silly gunzTarPerm modified mode [ 'test/deprecated.js', 438, 420 ]
+239 silly gunzTarPerm extractEntry test/repetitions.js
+240 silly gunzTarPerm modified mode [ 'test/repetitions.js', 438, 420 ]
+241 silly gunzTarPerm extractEntry test/sync.js
+242 silly gunzTarPerm modified mode [ 'test/sync.js', 438, 420 ]
+243 silly gunzTarPerm extractEntry wscript
+244 silly gunzTarPerm modified mode [ 'wscript', 438, 420 ]
+245 silly gunzTarPerm extractEntry support/expresso/package.json
+246 silly gunzTarPerm modified mode [ 'support/expresso/package.json', 438, 420 ]
+247 silly gunzTarPerm extractEntry support/expresso/.npmignore
+248 silly gunzTarPerm modified mode [ 'support/expresso/.npmignore', 438, 420 ]
+249 silly gunzTarPerm extractEntry support/expresso/bin/expresso
+250 silly gunzTarPerm modified mode [ 'support/expresso/bin/expresso', 438, 420 ]
+251 silly gunzTarPerm extractEntry support/expresso/docs/api.html
+252 silly gunzTarPerm modified mode [ 'support/expresso/docs/api.html', 438, 420 ]
+253 silly gunzTarPerm extractEntry support/expresso/docs/index.html
+254 silly gunzTarPerm modified mode [ 'support/expresso/docs/index.html', 438, 420 ]
+255 silly gunzTarPerm extractEntry support/expresso/docs/index.md
+256 silly gunzTarPerm modified mode [ 'support/expresso/docs/index.md', 438, 420 ]
+257 silly gunzTarPerm extractEntry support/expresso/docs/layout/foot.html
+258 silly gunzTarPerm modified mode [ 'support/expresso/docs/layout/foot.html', 438, 420 ]
+259 silly gunzTarPerm extractEntry support/expresso/docs/layout/head.html
+260 silly gunzTarPerm modified mode [ 'support/expresso/docs/layout/head.html', 438, 420 ]
+261 silly gunzTarPerm extractEntry support/expresso/.gitmodules
+262 silly gunzTarPerm modified mode [ 'support/expresso/.gitmodules', 438, 420 ]
+263 silly gunzTarPerm extractEntry support/expresso/lib/bar.js
+264 silly gunzTarPerm modified mode [ 'support/expresso/lib/bar.js', 438, 420 ]
+265 silly gunzTarPerm extractEntry support/expresso/lib/foo.js
+266 silly gunzTarPerm modified mode [ 'support/expresso/lib/foo.js', 438, 420 ]
+267 silly gunzTarPerm extractEntry support/expresso/Makefile
+268 silly gunzTarPerm modified mode [ 'support/expresso/Makefile', 438, 420 ]
+269 silly gunzTarPerm extractEntry support/expresso/test/assert.test.js
+270 silly gunzTarPerm modified mode [ 'support/expresso/test/assert.test.js', 438, 420 ]
+271 silly gunzTarPerm extractEntry support/expresso/test/async.test.js
+272 silly gunzTarPerm modified mode [ 'support/expresso/test/async.test.js', 438, 420 ]
+273 silly gunzTarPerm extractEntry support/expresso/test/bar.test.js
+274 silly gunzTarPerm modified mode [ 'support/expresso/test/bar.test.js', 438, 420 ]
+275 silly gunzTarPerm extractEntry support/expresso/test/foo.test.js
+276 silly gunzTarPerm modified mode [ 'support/expresso/test/foo.test.js', 438, 420 ]
+277 silly gunzTarPerm extractEntry support/expresso/test/http.test.js
+278 silly gunzTarPerm modified mode [ 'support/expresso/test/http.test.js', 438, 420 ]
+279 silly gunzTarPerm extractEntry support/expresso/test/serial/async.test.js
+280 silly gunzTarPerm modified mode [ 'support/expresso/test/serial/async.test.js', 438, 420 ]
+281 silly gunzTarPerm extractEntry support/expresso/test/serial/http.test.js
+282 silly gunzTarPerm modified mode [ 'support/expresso/test/serial/http.test.js', 438, 420 ]
+283 silly gunzTarPerm extractEntry support/expresso/Readme.md
+284 silly gunzTarPerm modified mode [ 'support/expresso/Readme.md', 438, 420 ]
+285 silly gunzTarPerm extractEntry support/expresso/History.md
+286 silly gunzTarPerm modified mode [ 'support/expresso/History.md', 438, 420 ]
+287 silly gunzTarPerm extractEntry tests/email.test.js
+288 silly gunzTarPerm modified mode [ 'tests/email.test.js', 438, 420 ]
+289 silly gunzTarPerm extractEntry tests/url.test.js
+290 silly gunzTarPerm modified mode [ 'tests/url.test.js', 438, 420 ]
+291 silly gunzTarPerm extractEntry tests/useTimestamps.test.js
+292 silly gunzTarPerm modified mode [ 'tests/useTimestamps.test.js', 438, 420 ]
+293 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\package.json
+294 info preinstall bcrypt@0.7.0
+295 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\package.json
+296 verbose readDependencies using package.json deps
+297 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\package.json
+298 verbose readDependencies using package.json deps
+299 verbose cache add [ 'bindings@1.0.0', null ]
+300 silly cache add name=undefined spec="bindings@1.0.0" args=["bindings@1.0.0",null]
+301 verbose parsed url { pathname: 'bindings@1.0.0',
+301 verbose parsed url   path: 'bindings@1.0.0',
+301 verbose parsed url   href: 'bindings@1.0.0' }
+302 silly cache add name="bindings" spec="1.0.0" args=["bindings","1.0.0"]
+303 verbose parsed url { pathname: '1.0.0', path: '1.0.0', href: '1.0.0' }
+304 verbose addNamed [ 'bindings', '1.0.0' ]
+305 verbose addNamed [ '1.0.0', '1.0.0' ]
+306 verbose url raw bindings/1.0.0
+307 verbose url resolving [ 'https://registry.npmjs.org/', './bindings/1.0.0' ]
+308 verbose url resolved https://registry.npmjs.org/bindings/1.0.0
+309 verbose etag "8DBO1S8DJR8DNAWMBNOBI9W7I"
+310 http GET https://registry.npmjs.org/bindings/1.0.0
+311 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\mongoose-types\package.json
+312 info preinstall mongoose-types@1.0.3
+313 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\mongoose-types\package.json
+314 verbose readDependencies using package.json deps
+315 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\mongoose-types\package.json
+316 verbose readDependencies using package.json deps
+317 silly resolved []
+318 verbose about to build C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\mongoose-types
+319 info build C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\mongoose-types
+320 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\mongoose-types\package.json
+321 verbose linkStuff [ false,
+321 verbose linkStuff   false,
+321 verbose linkStuff   false,
+321 verbose linkStuff   'C:\\Users\\john.kabler\\Desktop\\NTwitter\\node_modules\\mongoose-auth\\node_modules' ]
+322 info linkStuff mongoose-types@1.0.3
+323 verbose linkBins mongoose-types@1.0.3
+324 verbose linkMans mongoose-types@1.0.3
+325 verbose rebuildBundles mongoose-types@1.0.3
+326 info install mongoose-types@1.0.3
+327 info postinstall mongoose-types@1.0.3
+328 http 304 https://registry.npmjs.org/bindings/1.0.0
+329 silly registry.get cb [ 304,
+329 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+329 silly registry.get     etag: '"8DBO1S8DJR8DNAWMBNOBI9W7I"',
+329 silly registry.get     date: 'Tue, 17 Jul 2012 03:36:51 GMT',
+329 silly registry.get     'content-length': '0' } ]
+330 verbose etag bindings/1.0.0 from cache
+331 verbose read json C:\Users\john.kabler\AppData\Roaming\npm-cache\bindings\1.0.0\package\package.json
+332 silly resolved [ { name: 'bindings',
+332 silly resolved     description: 'Helper module for loading your native module\'s bindings',
+332 silly resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf' ],
+332 silly resolved     version: '1.0.0',
+332 silly resolved     author:
+332 silly resolved      { name: 'Nathan Rajlich',
+332 silly resolved        email: 'nathan@tootallnate.net',
+332 silly resolved        url: 'http://tootallnate.net' },
+332 silly resolved     repository:
+332 silly resolved      { type: 'git',
+332 silly resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+332 silly resolved     main: './bindings.js',
+332 silly resolved     engines: { node: '*' },
+332 silly resolved     readme: 'node-bindings\n=============\n### Helper module for loading your native module\'s bindings\n\nThis is a helper module for authors of Node.js native addon modules. In node >=\n0.7.0, it is encouraged to statically precompile your native addons for your\nvarious supported platforms and architectures, rather than depend on your users\nto do that. This adds two new burdens on the developer that we now need to\nconsider while writing our module:\n\n 1. You now have to compile the bindings yourself, before publishing the module.\n 2. You now have to figure out which version of the bindings to load at runtime.\n\n`node-bindings` attempts to solve probelm `#2`.\n\nThis module solves the organizational problem of how to store these bindings\nfiles with a simple directory convention:\n\n```\n<module_root>/compiled/<node_version>/<platform>/<arch>/bindings.node\n```\n\nSo for example, on a 32-bit Windows platform, running node `v0.6.9`, the\n`bindings.node` file should be placed in:\n\n```\n<module_root>/compiled/0.6/win32/ia32/bindings.node\n```\n\nOn 64-bit Mac OS X, running node `v0.7.1`, then the bindings file should be\nplaced in:\n\n```\n<module_root>/compiled/0.7/darwin/x64/bindings.node\n```\n\nFor reference, the calculations for the various parts that makes up the require\npath are:\n\n * `<module_root>` - The directory where `package.json` is found is the root.\n * `<platform>` - `process.platform`\n * `<arch>` - `process.arch`\n * `<node_version>` - `parseFloat(process.versions.node)`\n\nThe default "compiled" directory is `compiled` and the default name of every\n"bindings" file is `bindings.node`. This is configurable if you\'d like.\n\n\nInstallation\n------------\n\nInstall with `npm`:\n\n``` bash\n$ npm install bindings\n```\n\n\nExample\n-------\n\n`require()`ing the proper bindings file for the current node version, platform\nand architecture is as simple as:\n\n``` js\nvar bindings = require(\'bindings\')()\n\n// Use your bindings defined in your C files\nbindings.your_c_function()\n```\n\nYou can specify the name of the bindings file if you desire:\n\n``` js\nvar bindings = require(\'bindings\')(\'my_bindings\')\n```\n\nOr you can pass in an options Object for full configuration:\n\n\n``` js\nvar bindings = require(\'bindings\')({\n    bindings: \'my_bindings\'\n  , compiled: \'builddir\'\n})\n```\n\nNice Error Output\n-----------------\n\n```\nError: Could not load the bindings file. Tried:\n -> /Users/nrajlich/node-ffi/out/Debug/ffi_bindings.node\n -> /Users/nrajlich/node-ffi/Debug/ffi_bindings.node\n -> /Users/nrajlich/node-ffi/out/Release/ffi_bindings.node\n -> /Users/nrajlich/node-ffi/Release/ffi_bindings.node\n -> /Users/nrajlich/node-ffi/compiled/0.6/darwin/x64/ffi_bindings.node\n -> /Users/nrajlich/node-ffi/build/Release/ffi_bindings.node\n -> /Users/nrajlich/node-ffi/build/default/ffi_bindings.node\n    at bindings (/Users/nrajlich/node-ffi/node_modules/bindings/bindings.js:80:13)\n    at Object.<anonymous> (/Users/nrajlich/node-ffi/lib/ffi.js:3:34)\n    at Module._compile (module.js:441:26)\n    at Object..js (module.js:459:10)\n    at Module.load (module.js:348:31)\n    at Function._load (module.js:308:12)\n    ...\n```\n\nLicense\n-------\n\n(The MIT License)\n\nCopyright (c) 2012 Nathan Rajlich &lt;nathan@tootallnate.net&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+332 silly resolved     _id: 'bindings@1.0.0',
+332 silly resolved     _from: 'bindings@1.0.0' } ]
+333 info install bindings@1.0.0 into C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt
+334 info installOne bindings@1.0.0
+335 verbose from cache C:\Users\john.kabler\AppData\Roaming\npm-cache\bindings\1.0.0\package\package.json
+336 info C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\node_modules\bindings unbuild
+337 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\node_modules\bindings\package.json
+338 verbose tar unpack C:\Users\john.kabler\AppData\Roaming\npm-cache\bindings\1.0.0\package.tgz
+339 silly gunzTarPerm modes [ '755', '644' ]
+340 silly gunzTarPerm extractEntry package.json
+341 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+342 silly gunzTarPerm extractEntry README.md
+343 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+344 silly gunzTarPerm extractEntry bindings.js
+345 silly gunzTarPerm modified mode [ 'bindings.js', 438, 420 ]
+346 verbose read json C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\node_modules\bindings\package.json
+347 info preinstall bindings@1.0.0
+348 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\node_modules\bindings\package.json
+349 verbose readDependencies using package.json deps
+350 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\node_modules\bindings\package.json
+351 verbose readDependencies using package.json deps
+352 silly resolved []
+353 verbose about to build C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\node_modules\bindings
+354 info build C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\node_modules\bindings
+355 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\node_modules\bindings\package.json
+356 verbose linkStuff [ false,
+356 verbose linkStuff   false,
+356 verbose linkStuff   false,
+356 verbose linkStuff   'C:\\Users\\john.kabler\\Desktop\\NTwitter\\node_modules\\mongoose-auth\\node_modules\\bcrypt\\node_modules' ]
+357 info linkStuff bindings@1.0.0
+358 verbose linkBins bindings@1.0.0
+359 verbose linkMans bindings@1.0.0
+360 verbose rebuildBundles bindings@1.0.0
+361 info install bindings@1.0.0
+362 info postinstall bindings@1.0.0
+363 verbose about to build C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt
+364 info build C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt
+365 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\package.json
+366 verbose linkStuff [ false,
+366 verbose linkStuff   false,
+366 verbose linkStuff   false,
+366 verbose linkStuff   'C:\\Users\\john.kabler\\Desktop\\NTwitter\\node_modules\\mongoose-auth\\node_modules' ]
+367 info linkStuff bcrypt@0.7.0
+368 verbose linkBins bcrypt@0.7.0
+369 verbose linkMans bcrypt@0.7.0
+370 verbose rebuildBundles bcrypt@0.7.0
+371 verbose rebuildBundles [ 'bindings' ]
+372 info install bcrypt@0.7.0
+373 verbose unsafe-perm in lifecycle true
+374 silly exec cmd "/c" "node-gyp rebuild"
+375 silly cmd,/c,node-gyp rebuild,C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt spawning
+376 info bcrypt@0.7.0 Failed to exec install script
+377 info C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt unbuild
+378 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules\bcrypt\package.json
+379 info preuninstall bcrypt@0.7.0
+380 info uninstall bcrypt@0.7.0
+381 verbose false,C:\Users\john.kabler\Desktop\NTwitter\node_modules,C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\node_modules unbuild bcrypt@0.7.0
+382 info postuninstall bcrypt@0.7.0
+383 verbose about to build C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth
+384 info C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth unbuild
+385 verbose from cache C:\Users\john.kabler\Desktop\NTwitter\node_modules\mongoose-auth\package.json
+386 info preuninstall mongoose-auth@0.0.12
+387 info uninstall mongoose-auth@0.0.12
+388 verbose true,C:\Users\john.kabler\Desktop\NTwitter\node_modules,C:\Users\john.kabler\Desktop\NTwitter\node_modules unbuild mongoose-auth@0.0.12
+389 info postuninstall mongoose-auth@0.0.12
+390 error bcrypt@0.7.0 install: `node-gyp rebuild`
+390 error `cmd "/c" "node-gyp rebuild"` failed with 1
+391 error Failed at the bcrypt@0.7.0 install script.
+391 error This is most likely a problem with the bcrypt package,
+391 error not with npm itself.
+391 error Tell the author that this fails on your system:
+391 error     node-gyp rebuild
+391 error You can get their info via:
+391 error     npm owner ls bcrypt
+391 error There is likely additional logging output above.
+392 error System Windows_NT 6.1.7601
+393 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "mongoose-auth"
+394 error cwd C:\Users\john.kabler\Desktop\NTwitter
+395 error node -v v0.8.0
+396 error npm -v 1.1.32
+397 error code ELIFECYCLE
+398 error message bcrypt@0.7.0 install: `node-gyp rebuild`
+398 error message `cmd "/c" "node-gyp rebuild"` failed with 1
+399 verbose exit [ 1, true ]
