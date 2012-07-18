@@ -7,12 +7,13 @@ var express = require('express'),
     everyauth = require('everyauth'),
     mongoose = require('mongoose'),
     conf = require('./conf.js'),
+    config = require('./config.js'),
     routes = {
         index: require('./routes/index.js').index
        ,front: require('./routes/front.js')
     };
 
-mongoose.connect('mongodb://jpez:slater@ds035617.mongolab.com:35617/jpblog');
+mongoose.connect(config.creds.mongoose_auth);
 
 // The code below is for everyauth.  Need to eventually make this work with MongoDB instead of in memory
 var usersById = {};
