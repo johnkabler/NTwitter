@@ -11,8 +11,8 @@
  */
 module.exports = {
     fb: {
-        appId: 'xxx'
-        , appSecret: 'xxx'
+        appId: '450337675000997'
+        , appSecret: '9e2aad4b0654aab174f8437ac19bf6a8'
     }
     , twit: {
         consumerKey: 'xxx'
