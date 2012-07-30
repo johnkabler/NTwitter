@@ -1,19 +1,56 @@
-h1 /ascii/
+br
+br
+br
+br
+h1 John Kabler's Blog
+.navbar.navbar-fixed-top
+    .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='#') John Kabler
+          .nav-collapse
+            ul.nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='#about') About
+              li
+                a(href='#contact') Contact
+              - if(everyauth.facebook)
+              li
+              - if(everyauth.facebook)
+                Hi #{everyauth.facebook.user.name} from Facebook!
+              - else
+                a(href='auth/facebook') Sign in with Facebook
+          //
+            /.nav-collapse
+          a(href='http://www.nodejs.org')
+              img(src='http://nodejs.org/images/logos/nodejs-dark.png', width = 90, height = 50)
 
-form(method='post')
-      label
-        div title
-        input(type='text', name='title', value =title)
-      label
-        div art
-        textarea(name='art', value = 'art')
-        .error #{error}
-      input(type='submit')
+- if(everyauth.facebook)
+  Hi #{everyauth.facebook.user.name} from Facebook!
+  if(everyauth.facebook.user.name === 'John Kabler')
+      form(method='post')
+          label
+            div title
+            input(type='text', name='title', value =title)
+          label
+            div art
+            textarea(name='art', value = 'art')
+            .error #{error}
+          input(type='submit')
+  else
+    Nope
 
 each bpost in posts
   .art
       .art-title= bpost.title
+      .art-date= bpost.created
       pre.art-body=bpost.art
+
 
 
 
